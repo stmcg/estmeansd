@@ -1,0 +1,24 @@
+---
+output: md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Package Updates
+
+### Changes in Version 0.1.2 (TBD)
+*  Begun using Git as a version-control system and hosting repository on GitHub 
+   (https://github.com/stmcg/estmeansd)
+*  Added URL and BugReport webpage to the DESCRIPTION file
+*  Added NEWS.md file to track changes
+
+### Changes in Version 0.1.1 (2019-02-04)
+*  No longer imports the 'metamedian' package. Consequently, the internal 
+   function `get.scenario()` was written
+*  Renamed `two_sample_default` argument to `two.sample.default`
+
+### Changes in Version 0.1.0 (2019-01-11)
+*  First version released on CRAN
+
