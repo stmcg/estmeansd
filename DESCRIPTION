@@ -1,0 +1,28 @@
+Package: estmeansd
+Type: Package
+Title: Estimating the Sample Mean and Standard Deviation from Commonly Reported
+    Quantiles in Meta-Analysis
+Version: 0.1.1
+Authors@R: c(person("Sean", "McGrath", role = c("aut", "cre"), 
+                     email = "sean.mcgrath@mail.mcgill.ca",
+                     comment = c(ORCID = "0000-0002-7281-3516")),
+              person("XiaoFei", "Zhao", role = c("aut"),
+                      email = "xiaofei.zhao@mail.mcgill.ca"),
+              person("Russell", "Steele", role = c("aut"),
+                      email = "russell.steele@mcgill.ca"),
+              person("Andrea", "Benedetti", role = c("aut"), 
+                      email = "andrea.benedetti@mcgill.ca",
+                      comment = c(ORCID = "0000-0002-8314-9497")))
+Maintainer: Sean McGrath <sean.mcgrath@mail.mcgill.ca>
+Description: Implements the methods of McGrath et al. (in preparation) for 
+    estimating the sample mean and standard deviation from commonly reported
+    quantiles in meta-analysis. These methods can be applied to studies that 
+    report the sample median, sample size, and one or both of (i) the sample 
+    minimum and maximum values and (ii) the first and third quartiles. 
+Imports:
+    metaBLUE,
+    stats
+License: GPL (>=3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
