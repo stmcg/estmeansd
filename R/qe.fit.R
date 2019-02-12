@@ -17,8 +17,7 @@
 #' @param max.val numeric value giving the sample maximum.
 #' @param n numeric value giving the sample size.
 #' @param two.sample.default logical scalar. If set to \code{TRUE}, the candidate distributions, initial values, and box constraints are set to that of McGrath et al. (2018). If set to \code{FALSE}, the candidate distributions, initial values, and box constraints are set to that of McGrath et al. (in preparation). The default is \code{FALSE}.
-#' @param qe.fit.control optional list of control parameters for the minimization algorithm.
-#' \tabular{ll}{
+#' @param qe.fit.control optional list of control parameters for the minimization algorithm. \tabular{ll}{
 #' \code{norm.mu.start} \tab numeric value giving the starting value for the \eqn{\mu} parameter of the normal distribution. \cr
 #' \code{norm.sigma.start} \tab numeric value giving the starting value for the \eqn{\sigma} parameter of the normal distribution. \cr
 #' \code{lnorm.mu.start} \tab numeric value giving the starting value for the \eqn{\mu} parameter of the log-normal distribution. \cr

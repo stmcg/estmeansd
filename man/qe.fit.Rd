@@ -22,8 +22,7 @@ qe.fit(min.val, q1.val, med.val, q3.val, max.val, n,
 
 \item{two.sample.default}{logical scalar. If set to \code{TRUE}, the candidate distributions, initial values, and box constraints are set to that of McGrath et al. (2018). If set to \code{FALSE}, the candidate distributions, initial values, and box constraints are set to that of McGrath et al. (in preparation). The default is \code{FALSE}.}
 
-\item{qe.fit.control}{optional list of control parameters for the minimization algorithm.
-\tabular{ll}{
+\item{qe.fit.control}{optional list of control parameters for the minimization algorithm. \tabular{ll}{
 \code{norm.mu.start} \tab numeric value giving the starting value for the \eqn{\mu} parameter of the normal distribution. \cr
 \code{norm.sigma.start} \tab numeric value giving the starting value for the \eqn{\sigma} parameter of the normal distribution. \cr
 \code{lnorm.mu.start} \tab numeric value giving the starting value for the \eqn{\mu} parameter of the log-normal distribution. \cr
