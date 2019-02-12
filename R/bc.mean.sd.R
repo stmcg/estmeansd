@@ -56,6 +56,9 @@ bc.mean.sd <- function(min.val, q1.val, med.val, q3.val, max.val, n,
   if (missing(n)) {
     stop("Need to specify n")
   }
+  if (is.na(n) | n < 3 | n > 1e6){
+    stop("Value of n must be between 3 and 1,000,000")
+  }
 
   location.scale.shape <- get.location.scale.shape(min.val, q1.val, med.val,
                                                    q3.val, max.val, n, scenario)

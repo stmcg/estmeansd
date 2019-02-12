@@ -5,6 +5,7 @@ Package Updates
 
 -   Begun using Git as a version-control system and hosting repository
     on GitHub (<https://github.com/stmcg/estmeansd>)
+-   Added bounds on the sample size
 -   Added URL and BugReport webpage to the DESCRIPTION file
 -   Added NEWS.md file to track changes
 -   Minor updates to documentation

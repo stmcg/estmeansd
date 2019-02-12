@@ -67,8 +67,11 @@ qe.fit <- function(min.val, q1.val, med.val, q3.val, max.val, n,
                    two.sample.default = FALSE, qe.fit.control = list()) {
 
   scenario <- get.scenario(min.val, q1.val, med.val, q3.val, max.val)
-  if (missing(n) & (scenario %in% c("S1", "S3"))) {
-    stop("Need to specify n in S1 or S3")
+  if (missing(n)) {
+    stop("Need to specify n")
+  }
+  if (is.na(n) | n < 3 | n > 1e6){
+    stop("Value of n must be between 3 and 1,000,000")
   }
 
   if (scenario == "S1") {
