@@ -7,12 +7,13 @@ Package Updates
     on GitHub (<https://github.com/stmcg/estmeansd>)
 -   Added bounds on the sample size
 -   Added URL and BugReport webpage to the DESCRIPTION file
+-   Added README.md file
 -   Added NEWS.md file to track changes
 -   Minor updates to documentation
 
 ### Changes in Version 0.1.1 (2019-02-04)
 
--   No longer imports the 'metamedian' package. Consequently, the
+-   No longer imports the ‘metamedian’ package. Consequently, the
     internal function `get.scenario()` was written
 -   Renamed `two_sample_default` argument to `two.sample.default`
 
