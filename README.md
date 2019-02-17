@@ -19,7 +19,7 @@ of summary statistics:
   - S3: median, minimum and maximum values, first and third quartiles,
     and sample size
 
-Additionally, the shiny app
+Additionally, the Shiny app
 [estmeansd](https://smcgrath.shinyapps.io/estmeansd/) implements these
 methods.
 
@@ -37,4 +37,27 @@ can be installed from GitHub with:
 
 ``` r
 devtools::install_github("stmcg/estmeansd")
+```
+
+## Usage
+
+Specifically, this package implements the Box-Cox (BC) and Quantile
+Estimation (QE) methods to estimate the sample mean and standard
+deviation. The BC and QE methods can be applied using the `bc.mean.sd()`
+and `qe.mean.sd()` functions, respectively:
+
+``` r
+library(estmeansd)
+bc.mean.sd(min.val = 2, med.val = 4, max.val = 9, n = 100) # BC Method
+#> $est.mean
+#> [1] 4.098617
+#> 
+#> $est.sd
+#> [1] 1.330582
+qe.mean.sd(min.val = 2, med.val = 4, max.val = 9, n = 100) # QE Method
+#> $est.mean
+#> [1] 4.347284
+#> 
+#> $est.sd
+#> [1] 1.502171
 ```

@@ -25,7 +25,7 @@ The `estmeansd` package implements the methods of McGrath et al. (in preparation
 *  S2: median, first and third quartiles, and sample size
 *  S3: median, minimum and maximum values, first and third quartiles, and sample size
 
-Additionally, the shiny app [estmeansd](https://smcgrath.shinyapps.io/estmeansd/) implements these methods.
+Additionally, the Shiny app [estmeansd](https://smcgrath.shinyapps.io/estmeansd/) implements these methods.
 
 ## Installation
 
@@ -40,3 +40,13 @@ After installing the `devtools` package (i.e., calling `install.packages(devtool
 devtools::install_github("stmcg/estmeansd")
 ```
 
+## Usage
+
+Specifically, this package implements the Box-Cox (BC) and Quantile Estimation (QE) methods to estimate the sample mean and standard deviation. The BC and QE methods can be applied using the `bc.mean.sd()` and `qe.mean.sd()` functions, respectively:
+
+```{r}
+library(estmeansd)
+bc.mean.sd(min.val = 2, med.val = 4, max.val = 9, n = 100) # BC Method
+qe.mean.sd(min.val = 2, med.val = 4, max.val = 9, n = 100) # QE Method
+
+```
