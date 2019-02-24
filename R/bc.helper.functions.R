@@ -11,7 +11,7 @@ get.location.scale.shape <- function(min.val, q1.val, med.val, q3.val, max.val,
   lambda <- find.lambda(min.val, q1.val, med.val, q3.val, max.val, n, quants,
     scenario
   )
-  lambda <- round.lambda(lambda, n)
+  lambda <- round.lambda(lambda)
   transformed.vals <- smooth.bc.transform(quants, lambda)
 
   location <- metaBLUE::Luo.mean(transformed.vals, n, scenario)$muhat
@@ -76,13 +76,11 @@ find.lambda <- function(min.val, q1.val, med.val, q3.val, max.val, n, quants,
   }
 }
 
-round.lambda <- function(lambda, n, prior.power = 1, prior.strength = 200) {
-  prior.weight <- prior.strength * (prior.power - lambda)^2
-  ret <- (lambda * n + prior.power * prior.weight) / (n + prior.weight)
-  if (abs(ret) < 1e-8) {
+round.lambda <- function(lambda, min.lambda = 0) {
+  if (abs(lambda) < 1e-8) {
     0
   } else {
-    ret
+    max(min.lambda, lambda)
   }
 }
 

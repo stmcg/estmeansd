@@ -9,6 +9,7 @@ Package Updates
 -   Added `plot.qe.fit()`, an S3 plot method for objects returned by
     `qe.fit()`. Consequently, added ‘graphics’ and ‘grDevices’ to
     Imports
+-   Removed prior on the power parameter lambda in `bc.mean.sd()`
 -   Added bounds on the sample size in `bc.mean.sd()` and `qe.fit()`
 -   Added URL and BugReport webpage to the DESCRIPTION file
 -   Added README.md file

@@ -80,7 +80,8 @@ set.qe.fit.control <- function(quants, n, scenario, twosample_default){
     con$gamma.shape.start <- mean.hat^2/sd.hat^2
     con$gamma.rate.start <- mean.hat/sd.hat^2
 
-    con$beta.shape1.start <- mean.hat * (((mean.hat * (1 - mean.hat)) / (sd.hat^2)) - 1)
+    con$beta.shape1.start <- mean.hat *
+      (((mean.hat * (1 - mean.hat)) / (sd.hat^2)) - 1)
     con$beta.shape2.start <- con$beta.shape1.start * (1 - mean.hat) / mean.hat
 
     start.val <- (mean.hat/sd.hat)^1.086
