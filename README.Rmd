@@ -42,7 +42,7 @@ devtools::install_github("stmcg/estmeansd")
 
 ## Usage
 
-Specifically, this package implements the Box-Cox (BC) and Quantile Estimation (QE) methods to estimate the sample mean and standard deviation. The BC and QE methods can be applied using the `bc.mean.sd()` and `qe.mean.sd()` functions, respectively:
+Specifically, this package implements the Box-Cox (BC) and Quantile Estimation (QE) methods to estimate the sample mean and standard deviation. The BC and QE methods can be applied using the `bc.mean.sd()` and `qe.mean.sd()` functions, respectively: 
 
 ```{r}
 library(estmeansd)

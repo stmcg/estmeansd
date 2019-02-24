@@ -50,10 +50,10 @@ and `qe.mean.sd()` functions, respectively:
 library(estmeansd)
 bc.mean.sd(min.val = 2, med.val = 4, max.val = 9, n = 100) # BC Method
 #> $est.mean
-#> [1] 4.098617
+#> [1] 4.246644
 #> 
 #> $est.sd
-#> [1] 1.330582
+#> [1] 1.370589
 qe.mean.sd(min.val = 2, med.val = 4, max.val = 9, n = 100) # QE Method
 #> $est.mean
 #> [1] 4.347284
