@@ -52,8 +52,9 @@ A object of class \code{qe.fit}. The object is a list with the following compone
 \item{weibull.par}{Estimated parameters of the Weibull distribution.}
 \item{beta.par}{Estimated parameters of the beta distribution.}
 \item{values}{Values of the objective functions evaluated at the estimated paramters of each candidate distribution.}
+\item{...}{Other elements.}
 
-The results are printed with the \code{\link{print.qe.fit}} function.
+The results are printed with the \code{\link{print.qe.fit}} function. The results can be visualized by using the \code{\link{plot.qe.fit}} function.
 }
 \description{
 This function fits several parametric families of distributions from summary data in the following forms: \itemize{

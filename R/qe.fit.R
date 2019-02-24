@@ -46,8 +46,9 @@
 #' \item{weibull.par}{Estimated parameters of the Weibull distribution.}
 #' \item{beta.par}{Estimated parameters of the beta distribution.}
 #' \item{values}{Values of the objective functions evaluated at the estimated paramters of each candidate distribution.}
+#' \item{...}{Other elements.}
 #'
-#' The results are printed with the \code{\link{print.qe.fit}} function.
+#' The results are printed with the \code{\link{print.qe.fit}} function. The results can be visualized by using the \code{\link{plot.qe.fit}} function.
 #'
 #' @references McGrath S., Sohn H., Steele R., and Benedetti A. (2018). Two-sample aggregate data meta-analysis of medians. \emph{ArXiv e-prints}. \url{https://arxiv.org/abs/1809.01278}.
 #'
@@ -197,9 +198,11 @@ qe.fit <- function(min.val, q1.val, med.val, q3.val, max.val, n,
     names(beta.par) <- c("shape1", "shape2")
   }
 
+  num.input <- get.num.input(min.val, q1.val, med.val, q3.val, max.val, n)
   output <- list(norm.par = norm.par, lnorm.par = lnorm.par,
                  gamma.par = gamma.par, weibull.par = weibull.par,
-                 beta.par = beta.par, values = values)
+                 beta.par = beta.par, values = values,
+                 num.input = num.input)
   class(output) <- "qe.fit"
   return(output)
 }

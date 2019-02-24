@@ -117,3 +117,32 @@ set.qe.fit.control <- function(quants, n, scenario, twosample_default){
   }
   return(con)
 }
+
+get.num.input <- function(min.val, q1.val, med.val, q3.val, max.val, n){
+  res <- list()
+  if (!missing(min.val)){
+    res$min.val <- min.val
+  }
+  if (!missing(q1.val)){
+    res$q1.val <- q1.val
+  }
+  if (!missing(med.val)){
+    res$med.val <- med.val
+  }
+  if (!missing(q3.val)){
+    res$q3.val <- q3.val
+  }
+  if (!missing(max.val)){
+    res$max.val <- max.val
+  }
+  if (!missing(n)){
+    res$n <- n
+  }
+  return(res)
+}
+
+simpleCap <- function(x) {
+  s <- strsplit(x, " ")[[1]]
+  paste(toupper(substring(s, 1, 1)), substring(s, 2),
+        sep="", collapse=" ")
+}

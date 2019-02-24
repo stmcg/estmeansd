@@ -1,11 +1,15 @@
 Package Updates
 ---------------
 
-### Changes in Version 0.1.2 (TBD)
+### Changes in Version 0.2.0 (TBD)
 
 -   Begun using Git as a version-control system and hosting repository
-    on GitHub (<https://github.com/stmcg/estmeansd>)
--   Added bounds on the sample size
+    on GitHub (<https://github.com/stmcg/estmeansd>) for the development
+    version of the package
+-   Added `plot.qe.fit()`, an S3 plot method for objects returned by
+    `qe.fit()`. Consequently, added ‘graphics’ and ‘grDevices’ to
+    Imports
+-   Added bounds on the sample size in `bc.mean.sd()` and `qe.fit()`
 -   Added URL and BugReport webpage to the DESCRIPTION file
 -   Added README.md file
 -   Added NEWS.md file to track changes
