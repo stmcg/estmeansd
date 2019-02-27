@@ -21,6 +21,7 @@
 #' \item{est.sd}{Estimated sample standard deviation.}
 #' \item{selected.dist}{Selected outcome distribution.}
 #' \item{values}{Values of the objective functions evaluated at the estimated paramters of each candidate distribution.}
+#' \item{...}{Other elements.}
 #'
 #' @examples
 #' ## Generate S2 summary data
@@ -46,6 +47,11 @@ qe.mean.sd <- function(min.val, q1.val, med.val, q3.val, max.val, n,
   ests <- get.mean.sd(x, selected.dist)
   output <- list(est.mean = ests$est.mean, est.sd = ests$est.sd,
                  selected.dist = selected.dist, values = x$values)
+  for (dist.name in names(x$values)){
+    ests.all <- get.mean.sd(x, dist.name)
+    output[paste0(dist.name, '.est.mean')] <- ests.all$est.mean
+    output[paste0(dist.name, '.est.sd')] <- ests.all$est.sd
+  }
   class(output) <- "qe.mean.sd"
   return(output)
 }
