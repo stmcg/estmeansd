@@ -8,11 +8,11 @@
 [![CRAN\_Download\_Badge](https://cranlogs.r-pkg.org/badges/estmeansd)](https://www.r-pkg.org/pkg/estmeansd)
 [![CRAN\_Download\_Badge\_All](https://cranlogs.r-pkg.org/badges/grand-total/estmeansd)](https://www.r-pkg.org/pkg/estmeansd)
 
-The `estmeansd` package implements the methods of McGrath et al. (in
-preparation) for estimating the sample mean and standard deviation from
-commonly reported quantiles in meta-analysis. Specifically, these
-methods can be applied to studies that report one of the following sets
-of summary statistics:
+The `estmeansd` package implements the methods of [McGrath et
+al. (2019)](https://arxiv.org/abs/1903.10498) for estimating the sample
+mean and standard deviation from commonly reported quantiles in
+meta-analysis. Specifically, these methods can be applied to studies
+that report one of the following sets of summary statistics:
 
   - S1: median, minimum and maximum values, and sample size
   - S2: median, first and third quartiles, and sample size
@@ -50,10 +50,10 @@ and `qe.mean.sd()` functions, respectively:
 library(estmeansd)
 bc.mean.sd(min.val = 2, med.val = 4, max.val = 9, n = 100) # BC Method
 #> $est.mean
-#> [1] 4.246644
+#> [1] 4.204881
 #> 
 #> $est.sd
-#> [1] 1.370589
+#> [1] 1.277236
 qe.mean.sd(min.val = 2, med.val = 4, max.val = 9, n = 100) # QE Method
 #> $est.mean
 #> [1] 4.347284

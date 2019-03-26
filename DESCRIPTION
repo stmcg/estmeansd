@@ -14,8 +14,8 @@ Authors@R: c(person("Sean", "McGrath", role = c("aut", "cre"),
                       email = "andrea.benedetti@mcgill.ca",
                       comment = c(ORCID = "0000-0002-8314-9497")))
 Maintainer: Sean McGrath <sean.mcgrath@mail.mcgill.ca>
-Description: Implements the methods of McGrath et al. (in preparation) for 
-    estimating the sample mean and standard deviation from commonly reported
+Description: Implements the methods of McGrath et al. (2019) <arXiv:1903.10498> 
+    for estimating the sample mean and standard deviation from commonly reported
     quantiles in meta-analysis. These methods can be applied to studies that 
     report the sample median, sample size, and one or both of (i) the sample 
     minimum and maximum values and (ii) the first and third quartiles. 

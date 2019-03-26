@@ -54,3 +54,6 @@ qe.mean.sd(q1.val = quants[1], med.val = quants[2], q3.val = quants[3],
     n = n)
 
 }
+\references{
+McGrath S., Zhao X., Steele R., Thombs B.D., Benedetti A., and the DEPRESsion Screening Data (DEPRESSD) Collaboration. (2019). Estimating the sample mean and standard deviation from commonly reported quantiles in meta-analysis. \emph{ArXiv e-prints}. \url{https://arxiv.org/abs/1903.10498}.
+}

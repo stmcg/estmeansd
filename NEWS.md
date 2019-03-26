@@ -1,7 +1,7 @@
 Package Updates
 ---------------
 
-### Changes in Version 0.2.0 (TBD)
+### Changes in Version 0.2.0 (2019-03-26)
 
 -   Begun using Git as a version-control system and hosting repository
     on GitHub (<https://github.com/stmcg/estmeansd>) for the development

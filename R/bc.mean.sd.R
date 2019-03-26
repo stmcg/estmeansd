@@ -44,6 +44,7 @@
 #' bc.mean.sd(q1.val = quants[1], med.val = quants[2], q3.val = quants[3],
 #'     n = n)
 #'
+#' @references McGrath S., Zhao X., Steele R., Thombs B.D., Benedetti A., and the DEPRESsion Screening Data (DEPRESSD) Collaboration. (2019). Estimating the sample mean and standard deviation from commonly reported quantiles in meta-analysis. \emph{ArXiv e-prints}. \url{https://arxiv.org/abs/1903.10498}.
 #' @references Box G.E.P., and D.R. Cox. (1964). An analysis of transformations. \emph{Journal of the Royal Statistical Society Series B}. \strong{26}(2):211-52.
 #' @references Luo D., Wan X., Liu J., and Tong T. (2016). Optimally estimating the sample mean from the sample size, median, mid-range, and/or mid-quartile range. \emph{Statistical Methods in Medical Research}. \strong{27}(6):1785-805
 #' @references Wan X., Wang W., Liu J., and Tong T. (2014). Estimating the sample mean and standard deviation from the sample size, median, range and/or interquartile range. \emph{BMC Medical Research Methodology}. \strong{14}:135.
