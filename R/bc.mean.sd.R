@@ -86,6 +86,7 @@ bc.mean.sd <- function(min.val, q1.val, med.val, q3.val, max.val, n,
       var.val.result <- stats::integrate(var.val.integrand, lower, upper)
       var.val <- var.val.result$value
     } else {
+      exp.val <- exp(location + scale^2 / 2)
       var.val <- (exp(scale^2) - 1) * exp(2 * location + scale^2)
     }
     output <- list(est.mean = as.numeric(exp.val),
