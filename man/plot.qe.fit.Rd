@@ -4,10 +4,21 @@
 \alias{plot.qe.fit}
 \title{Plot method for objects of class "qe.fit"}
 \usage{
-\method{plot}{qe.fit}(x, distributions = c("normal", "log-normal",
-  "gamma", "weibull"), points = TRUE, limits, col, legend = TRUE,
-  xlab = "x", ylab = "F(x)", ylim = c(0, 1), cex.points = 0.85,
-  pch.points = 16, length.out = 10000, ...)
+\method{plot}{qe.fit}(
+  x,
+  distributions = c("normal", "log-normal", "gamma", "weibull"),
+  points = TRUE,
+  limits,
+  col,
+  legend = TRUE,
+  xlab = "x",
+  ylab = "F(x)",
+  ylim = c(0, 1),
+  cex.points = 0.85,
+  pch.points = 16,
+  length.out = 10000,
+  ...
+)
 }
 \arguments{
 \item{x}{object of class "qe.fit".}

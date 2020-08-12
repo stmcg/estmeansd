@@ -4,8 +4,15 @@
 \alias{qe.mean.sd}
 \title{Quantile estimation method for estimating the sample mean and standard deviation}
 \usage{
-qe.mean.sd(min.val, q1.val, med.val, q3.val, max.val, n,
-  qe.fit.control = list())
+qe.mean.sd(
+  min.val,
+  q1.val,
+  med.val,
+  q3.val,
+  max.val,
+  n,
+  qe.fit.control = list()
+)
 }
 \arguments{
 \item{min.val}{numeric value giving the sample minimum.}
@@ -55,5 +62,5 @@ qe.mean.sd(q1.val = quants[1], med.val = quants[2], q3.val = quants[3],
 
 }
 \references{
-McGrath S., Zhao X., Steele R., Thombs B.D., Benedetti A., and the DEPRESsion Screening Data (DEPRESSD) Collaboration. (2019). Estimating the sample mean and standard deviation from commonly reported quantiles in meta-analysis. \emph{ArXiv e-prints}. \url{https://arxiv.org/abs/1903.10498}.
+McGrath S., Zhao X., Steele R., Thombs B.D., Benedetti A., and the DEPRESsion Screening Data (DEPRESSD) Collaboration. (2020). Estimating the sample mean and standard deviation from commonly reported quantiles in meta-analysis. \emph{Statistical Methods in Medical Research}. \strong{29}(9):2520-2537.
 }

@@ -23,7 +23,7 @@
 #' \item{values}{Values of the objective functions evaluated at the estimated paramters of each candidate distribution.}
 #' \item{...}{Other elements.}
 #'
-#' @references McGrath S., Zhao X., Steele R., Thombs B.D., Benedetti A., and the DEPRESsion Screening Data (DEPRESSD) Collaboration. (2019). Estimating the sample mean and standard deviation from commonly reported quantiles in meta-analysis. \emph{ArXiv e-prints}. \url{https://arxiv.org/abs/1903.10498}.
+#' @references McGrath S., Zhao X., Steele R., Thombs B.D., Benedetti A., and the DEPRESsion Screening Data (DEPRESSD) Collaboration. (2020). Estimating the sample mean and standard deviation from commonly reported quantiles in meta-analysis. \emph{Statistical Methods in Medical Research}. \strong{29}(9):2520-2537.
 #'
 #' @examples
 #' ## Generate S2 summary data

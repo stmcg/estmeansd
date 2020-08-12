@@ -14,11 +14,12 @@ Authors@R: c(person("Sean", "McGrath", role = c("aut", "cre"),
                       email = "andrea.benedetti@mcgill.ca",
                       comment = c(ORCID = "0000-0002-8314-9497")))
 Maintainer: Sean McGrath <sean.mcgrath@mail.mcgill.ca>
-Description: Implements the methods of McGrath et al. (2019) <arXiv:1903.10498> 
-    for estimating the sample mean and standard deviation from commonly reported
-    quantiles in meta-analysis. These methods can be applied to studies that 
-    report the sample median, sample size, and one or both of (i) the sample 
-    minimum and maximum values and (ii) the first and third quartiles. 
+Description: Implements the methods of McGrath et al. (2020) 
+    <doi:10.1002/bimj.201900036> for estimating the sample mean and standard 
+    deviation from commonly reported quantiles in meta-analysis. These methods 
+    can be applied to studies that report the sample median, sample size, and 
+    one or both of (i) the sample minimum and maximum values and (ii) the first 
+    and third quartiles. 
 Imports:
     graphics,
     grDevices,
@@ -27,6 +28,6 @@ Imports:
 License: GPL (>=3)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
 URL: https://github.com/stmcg/estmeansd
 BugReports: https://github.com/stmcg/estmeansd/issues

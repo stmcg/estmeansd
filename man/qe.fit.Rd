@@ -4,8 +4,16 @@
 \alias{qe.fit}
 \title{Quantile estimation fitting}
 \usage{
-qe.fit(min.val, q1.val, med.val, q3.val, max.val, n,
-  two.sample.default = FALSE, qe.fit.control = list())
+qe.fit(
+  min.val,
+  q1.val,
+  med.val,
+  q3.val,
+  max.val,
+  n,
+  two.sample.default = FALSE,
+  qe.fit.control = list()
+)
 }
 \arguments{
 \item{min.val}{numeric value giving the sample minimum.}
@@ -20,7 +28,7 @@ qe.fit(min.val, q1.val, med.val, q3.val, max.val, n,
 
 \item{n}{numeric value giving the sample size.}
 
-\item{two.sample.default}{logical scalar. If set to \code{TRUE}, the candidate distributions, initial values, and box constraints are set to that of McGrath et al. (2018). If set to \code{FALSE}, the candidate distributions, initial values, and box constraints are set to that of McGrath et al. (2019). The default is \code{FALSE}.}
+\item{two.sample.default}{logical scalar. If set to \code{TRUE}, the candidate distributions, initial values, and box constraints are set to that of McGrath et al. (2020a). If set to \code{FALSE}, the candidate distributions, initial values, and box constraints are set to that of McGrath et al. (2020b). The default is \code{FALSE}.}
 
 \item{qe.fit.control}{optional list of control parameters for the minimization algorithm. \tabular{ll}{
 \code{norm.mu.start} \tab numeric value giving the starting value for the \eqn{\mu} parameter of the normal distribution. \cr
@@ -66,7 +74,7 @@ This function fits several parametric families of distributions from summary dat
 \details{
 Distributions are fit by minimizing the distance between observed and distribution quantiles in the L2-norm. The limited-memory Broyden-Fletcher-Goldfarb-Shanno (L-BFGS-M) algorithm implemented in the \code{\link[stats]{optim}} function is used for minimization.
 
-Two different conventions may be used for setting the candidate distributions, parameter starting values, and parameter constraints, which is controlled by the \code{two.sample.default} argument. If the convention of McGrath et al. (2018) is used, the candidate distributions are the normal, log-normal, gamma, and Weibull distributions. If the convention of McGrath et al. (2019) is used, the beta distribution is also included. In either case, if a negative value is provided (e.g., for the minimum value or the first quartile value), only the normal distribution is fit.
+Two different conventions may be used for setting the candidate distributions, parameter starting values, and parameter constraints, which is controlled by the \code{two.sample.default} argument. If the convention of McGrath et al. (2020a) is used, the candidate distributions are the normal, log-normal, gamma, and Weibull distributions. If the convention of McGrath et al. (2020b) is used, the beta distribution is also included. In either case, if a negative value is provided (e.g., for the minimum value or the first quartile value), only the normal distribution is fit.
 }
 \examples{
 ## Generate S2 summary data
@@ -80,7 +88,7 @@ qe.fit(q1.val = quants[1], med.val = quants[2], q3.val = quants[3], n = n)
 
 }
 \references{
-McGrath S., Sohn H., Steele R., and Benedetti A. (2018). Two-sample aggregate data meta-analysis of medians. \emph{ArXiv e-prints}. \url{https://arxiv.org/abs/1809.01278}.
+McGrath S., Sohn H., Steele R., and Benedetti A. (2020a). Meta-analysis of the difference of medians. \emph{Biometrical Journal}, \strong{62}, 69-98.
 
-McGrath S., Zhao X., Steele R., Thombs B.D., Benedetti A., and the DEPRESsion Screening Data (DEPRESSD) Collaboration. (2019). Estimating the sample mean and standard deviation from commonly reported quantiles in meta-analysis. \emph{ArXiv e-prints}. \url{https://arxiv.org/abs/1903.10498}.
+McGrath S., Zhao X., Steele R., Thombs B.D., Benedetti A., and the DEPRESsion Screening Data (DEPRESSD) Collaboration. (2020b). Estimating the sample mean and standard deviation from commonly reported quantiles in meta-analysis. \emph{Statistical Methods in Medical Research}. \strong{29}(9):2520-2537.
 }

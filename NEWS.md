@@ -1,13 +1,14 @@
 Package Updates
 ---------------
 
-### Changes in Version 0.2.1 (TBD)
+### Changes in Version 0.2.1 (2020-08-12)
 
 -   Fixed a minor error in `bc.mean.sd()`. The function previously
     failed to calculate the sample mean when the following set of
     conditions held: `preserve.tail` was set to `FALSE`, `avoid.mc` was
     set to `TRUE`, and the shape parameter was of magnitude less than
     0.01.
+-   Updated references
 
 ### Changes in Version 0.2.0 (2019-03-26)
 
