@@ -2,7 +2,7 @@ Package: estmeansd
 Type: Package
 Title: Estimating the Sample Mean and Standard Deviation from Commonly Reported
     Quantiles in Meta-Analysis
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: c(person("Sean", "McGrath", role = c("aut", "cre"), 
                      email = "sean.mcgrath@mail.mcgill.ca",
                      comment = c(ORCID = "0000-0002-7281-3516")),
