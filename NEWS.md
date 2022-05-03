@@ -1,5 +1,9 @@
-Package Updates
----------------
+## Package Updates
+
+### Changes in Version 1.0.0 (TBD)
+
+-   Added the `mln.mean.sd()` function, which implements the Method for
+    Unknown Non-Normal Distributions (MLN) approach of Cai et al. (2021)
 
 ### Changes in Version 0.2.1 (2020-08-12)
 
