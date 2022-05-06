@@ -203,7 +203,7 @@ qe.fit <- function(min.val, q1.val, med.val, q3.val, max.val, n,
   output <- list(norm.par = norm.par, lnorm.par = lnorm.par,
                  gamma.par = gamma.par, weibull.par = weibull.par,
                  beta.par = beta.par, values = values,
-                 num.input = num.input)
+                 num.input = num.input, scenario = scenario)
   class(output) <- "qe.fit"
   return(output)
 }

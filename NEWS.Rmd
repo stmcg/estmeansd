@@ -11,6 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ### Changes in Version 1.0.0 (TBD)
 *  Added the `mln.mean.sd()` function, which implements the Method for Unknown 
    Non-Normal Distributions (MLN) approach of Cai et al. (2021)
+*  Added parametric bootstrap SE estimators for the QE, BC, and MLN approaches. 
+   See the `get_SE()` generic function.
    
 ### Changes in Version 0.2.1 (2020-08-12)
 *  Fixed a minor error in `bc.mean.sd()`. The function previously failed to 

@@ -35,7 +35,7 @@ A list with the following components:
 \item{est.sd}{Estimated sample standard deviation.}
 \item{selected.dist}{Selected outcome distribution.}
 \item{values}{Values of the objective functions evaluated at the estimated paramters of each candidate distribution.}
-\item{...}{Other elements.}
+\item{...}{Some additional elements.}
 }
 \description{
 This function applies the quantile estimation (QE) method to estimate the sample mean and standard deviation from a study that presents one of the following sets of summary statistics: \itemize{

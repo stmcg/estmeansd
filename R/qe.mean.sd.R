@@ -21,7 +21,7 @@
 #' \item{est.sd}{Estimated sample standard deviation.}
 #' \item{selected.dist}{Selected outcome distribution.}
 #' \item{values}{Values of the objective functions evaluated at the estimated paramters of each candidate distribution.}
-#' \item{...}{Other elements.}
+#' \item{...}{Some additional elements.}
 #'
 #' @references McGrath S., Zhao X., Steele R., Thombs B.D., Benedetti A., and the DEPRESsion Screening Data (DEPRESSD) Collaboration. (2020). Estimating the sample mean and standard deviation from commonly reported quantiles in meta-analysis. \emph{Statistical Methods in Medical Research}. \strong{29}(9):2520-2537.
 #'
@@ -42,13 +42,15 @@
 
 qe.mean.sd <- function(min.val, q1.val, med.val, q3.val, max.val, n,
                    qe.fit.control = list()) {
+  args <- as.list(environment())
   x <- qe.fit(min.val = min.val, q1.val = q1.val, med.val = med.val,
               q3.val = q3.val, max.val = max.val, n = n,
               qe.fit.control = qe.fit.control)
   selected.dist <- names(which.min(x$values))
   ests <- get.mean.sd(x, selected.dist)
   output <- list(est.mean = ests$est.mean, est.sd = ests$est.sd,
-                 selected.dist = selected.dist, values = x$values)
+                 selected.dist = selected.dist, values = x$values,
+                 args = args, scenario = x$scenario, fitted.dists = x)
   for (dist.name in names(x$values)){
     ests.all <- get.mean.sd(x, dist.name)
     output[paste0(dist.name, '.est.mean')] <- ests.all$est.mean
