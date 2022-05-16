@@ -54,12 +54,8 @@ mln.mean.sd <- function(min.val, q1.val, med.val, q3.val, max.val, n) {
 
   scenario <- get.scenario(min.val = min.val, q1.val = q1.val, med.val = med.val,
                            q3.val = q3.val, max.val = max.val)
-  if (missing(n)) {
-    stop("Need to specify n")
-  }
-  if (is.na(n) | n < 3 | n > 1e6){
-    stop("Value of n must be between 3 and 1,000,000")
-  }
+  check_errors(min.val = min.val, q1.val = q1.val, med.val = med.val,
+               q3.val = q3.val, max.val = max.val, n = n, scenario = scenario)
 
   h <- floor(0.25 * n + 1)
   j <- floor(0.5 * n + 1)

@@ -1,11 +1,12 @@
 ## Package Updates
 
-### Changes in Version 1.0.0 (TBD)
+### Changes in Version 1.0.0 (2022-06-17)
 
 -   Added the `mln.mean.sd()` function, which implements the Method for
     Unknown Non-Normal Distributions (MLN) approach of Cai et al. (2021)
 -   Added parametric bootstrap SE estimators for the QE, BC, and MLN
     approaches. See the `get_SE()` generic function.
+-   Expanded error checking
 
 ### Changes in Version 0.2.1 (2020-08-12)
 

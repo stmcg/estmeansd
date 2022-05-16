@@ -39,7 +39,7 @@ res <- mln.mean.sd(min.val = quants[1], med.val = quants[2], max.val = quants[3]
 get_SE(res)$est.se
 }
 \references{
-McGrath S., Katzenschlager S., Zimmer A.J., Seitel A., Denkinger C.M., Steele R., Benedetti A. (In preparation). Standard error estimation in meta-analysis of studies reporting medians.
+McGrath S., Katzenschlager S., Zimmer A.J., Seitel A., Steele R., Benedetti A. (In preparation). Standard error estimation in meta-analysis of studies reporting medians.
 
 Cai S., Zhou J., and Pan J. (2021). Estimating the sample mean and standard deviation from order statistics and sample size in meta-analysis. \emph{Statistical Methods in Medical Research}. \strong{30}(12):2701-2719.
 }

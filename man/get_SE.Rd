@@ -21,5 +21,5 @@ A list with the following components:
 A generic function for computing parametric bootstrap standard error (SE) estimates.
 }
 \references{
-McGrath S., Katzenschlager S., Zimmer A.J., Seitel A., Denkinger C.M., Steele R., Benedetti A. (In preparation). Standard error estimation in meta-analysis of studies reporting medians.
+McGrath S., Katzenschlager S., Zimmer A.J., Seitel A., Steele R., Benedetti A. (In preparation). Standard error estimation in meta-analysis of studies reporting medians.
 }
