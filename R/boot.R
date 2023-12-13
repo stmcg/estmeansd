@@ -9,7 +9,7 @@
 #' \item{boot.means}{Bootstrap replicates of the mean estimates.}
 #' \item{boot.sds}{Bootstrap replicates of the standard deviation estimates.}
 #'
-#' @references McGrath S., Katzenschlager S., Zimmer A.J., Seitel A., Steele R., Benedetti A. (In preparation). Standard error estimation in meta-analysis of studies reporting medians.
+#' @references McGrath S., Katzenschlager S., Zimmer A.J., Seitel A., Steele R., and Benedetti A. (2023). Standard error estimation in meta-analysis of studies reporting medians. \emph{Statistical Methods in Medical Research}. \strong{32}(2):373-388.
 #'
 #' @export
 get_SE <- function(x, ...){
@@ -30,7 +30,7 @@ get_SE <- function(x, ...){
 #' \item{boot.means}{Bootstrap replicates of the mean estimates.}
 #' \item{boot.sds}{Bootstrap replicates of the standard deviation estimates.}
 #'
-#' @references McGrath S., Katzenschlager S., Zimmer A.J., Seitel A., Steele R., Benedetti A. (In preparation). Standard error estimation in meta-analysis of studies reporting medians.
+#' @references McGrath S., Katzenschlager S., Zimmer A.J., Seitel A., Steele R., and Benedetti A. (2023). Standard error estimation in meta-analysis of studies reporting medians. \emph{Statistical Methods in Medical Research}. \strong{32}(2):373-388.
 #' @references McGrath S., Zhao X., Steele R., Thombs B.D., Benedetti A., and the DEPRESsion Screening Data (DEPRESSD) Collaboration. (2020). Estimating the sample mean and standard deviation from commonly reported quantiles in meta-analysis. \emph{Statistical Methods in Medical Research}. \strong{29}(9):2520-2537.
 #'
 #' @examples
@@ -104,7 +104,7 @@ get_SE.qe.mean.sd <- function(x, nboot = 1000, shift.when.negative = TRUE,
 #' \item{boot.means}{Bootstrap replicates of the mean estimates.}
 #' \item{boot.sds}{Bootstrap replicates of the standard deviation estimates.}
 #'
-#' @references McGrath S., Katzenschlager S., Zimmer A.J., Seitel A., Steele R., Benedetti A. (In preparation). Standard error estimation in meta-analysis of studies reporting medians.
+#' @references McGrath S., Katzenschlager S., Zimmer A.J., Seitel A., Steele R., and Benedetti A. (2023). Standard error estimation in meta-analysis of studies reporting medians. \emph{Statistical Methods in Medical Research}. \strong{32}(2):373-388.
 #' @references McGrath S., Zhao X., Steele R., Thombs B.D., Benedetti A., and the DEPRESsion Screening Data (DEPRESSD) Collaboration. (2020). Estimating the sample mean and standard deviation from commonly reported quantiles in meta-analysis. \emph{Statistical Methods in Medical Research}. \strong{29}(9):2520-2537.
 #'
 #' @examples
@@ -167,7 +167,7 @@ get_SE.bc.mean.sd <- function(x, nboot = 1000, shift.when.negative = TRUE,
 #' \item{boot.means}{Bootstrap replicates of the mean estimates.}
 #' \item{boot.sds}{Bootstrap replicates of the standard deviation estimates.}
 #'
-#' @references McGrath S., Katzenschlager S., Zimmer A.J., Seitel A., Steele R., Benedetti A. (In preparation). Standard error estimation in meta-analysis of studies reporting medians.
+#' @references McGrath S., Katzenschlager S., Zimmer A.J., Seitel A., Steele R., and Benedetti A. (2023). Standard error estimation in meta-analysis of studies reporting medians. \emph{Statistical Methods in Medical Research}. \strong{32}(2):373-388.
 #' @references Cai S., Zhou J., and Pan J. (2021). Estimating the sample mean and standard deviation from order statistics and sample size in meta-analysis. \emph{Statistical Methods in Medical Research}. \strong{30}(12):2701-2719.
 #'
 #' @examples

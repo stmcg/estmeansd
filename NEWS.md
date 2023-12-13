@@ -1,5 +1,9 @@
 ## Package Updates
 
+### Changes in Version 1.0.1 (TBD)
+
+-   Updated documentation
+
 ### Changes in Version 1.0.0 (2022-06-17)
 
 -   Added the `mln.mean.sd()` function, which implements the Method for
