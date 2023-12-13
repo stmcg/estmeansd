@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 ```
 # estmeansd: Estimating the Sample Mean and Standard Deviation from Commonly Reported Quantiles in Meta-Analysis
 
-[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/estmeansd)](https://cran.r-project.org/package=estmeansd)
+[![CRAN_Status_Badge](https://badges.cranchecks.info/worst/estmeansd.svg)](https://cran.r-project.org/package=estmeansd)
 [![CRAN_Download_Badge](https://cranlogs.r-pkg.org/badges/estmeansd)](https://www.r-pkg.org/pkg/estmeansd)
 [![CRAN_Download_Badge_All](https://cranlogs.r-pkg.org/badges/grand-total/estmeansd)](https://www.r-pkg.org/pkg/estmeansd)
 
