@@ -110,7 +110,7 @@ mln.mean.sd <- function(min.val, q1.val, med.val, q3.val, max.val, n) {
   if (is.null(opt)) {
     stop("Optimization algorithm for finding lambda did not converge.")
   }
-  lambda.hat <-round.lambda(opt$maximum)
+  lambda.hat <-round_lambda(opt$maximum)
 
   if (scenario == 'S1'){
     min.val.lambda <- boxcoxtrans(lambda.hat, min.val)

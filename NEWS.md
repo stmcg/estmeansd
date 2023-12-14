@@ -1,6 +1,6 @@
 ## Package Updates
 
-### Changes in Version 1.0.1 (TBD)
+### Changes in Version 1.0.1 (2023-12-13)
 
 -   Removed Travis CI
 -   Updated documentation
